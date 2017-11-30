@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_texto_foto"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:text="Foto n°"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_foto"
+                    android:background="#22000000"
+                    android:tint="@color/accent"
+                    card_view:srcCompat="@drawable/ic_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" />
+
+                <TextView
+                    android:id="@+id/tv_nombre_foto"
+                    android:padding="8dp"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:background="#68000000"
+                    android:text="Nombre de la foto"
+                    android:layout_alignBottom="@+id/img_foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                card_view:srcCompat="@drawable/ic_star"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:tint="#55FFFFFF"
+                android:id="@+id/btn_fav"
+                />
+            <ImageView
+                android:id="@+id/btn_info"
+                card_view:srcCompat="@drawable/ic_info"
+                android:layout_width="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="40dp"
+                android:tint="#55FFFFFF"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+

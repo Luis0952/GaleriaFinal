@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <EditText
+        android:id="@+id/ed_nombre"
+        android:hint="Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_telefono"
+        android:hint="Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_correo"
+        android:hint="Correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/ed_contraseña"
+        android:hint="Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btn_progress"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:cpb_colorIndicator="@color/accent"
+        app:cpb_colorIndicatorBackground="#00000000"
+        app:cpb_colorProgress="#00000000"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_selectorComplete="@android:color/holo_blue_dark"
+        app:cpb_selectorError="@android:color/holo_red_dark"
+        app:cpb_selectorIdle="@color/accent"
+        app:cpb_textComplete="Registrado Correctamente"
+        app:cpb_textError="Error al registrar"
+        app:cpb_textIdle="Registrarse"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+
+</LinearLayout>
+
+

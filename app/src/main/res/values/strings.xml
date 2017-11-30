@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GaleriaFinal</string>
+    <string name="title_activity_prueba">ActivityPrueba</string>
+    <string name="title_activity_info_foto">ActivityInfoFoto</string>
+    <string name="cancelar">cancelar</string>
+    <string name="aceptar">guardar</string>
+</resources>
